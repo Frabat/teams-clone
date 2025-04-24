@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/teams-clone/static/css/main.1f407522.css",
+    "main.js": "/teams-clone/static/js/main.72215055.js",
+    "static/js/453.46290f38.chunk.js": "/teams-clone/static/js/453.46290f38.chunk.js",
+    "index.html": "/teams-clone/index.html",
+    "main.1f407522.css.map": "/teams-clone/static/css/main.1f407522.css.map",
+    "main.72215055.js.map": "/teams-clone/static/js/main.72215055.js.map",
+    "453.46290f38.chunk.js.map": "/teams-clone/static/js/453.46290f38.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f407522.css",
+    "static/js/main.72215055.js"
+  ]
+}
