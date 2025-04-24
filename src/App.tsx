@@ -59,29 +59,31 @@ const MeetingDetailsContainer = styled(Box)({
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Provider store={store}>
-          <ThemeProvider theme={darkTheme}>
-            <CssBaseline />
-            <AppContainer>
-              <Sidebar />
-              <MainContent>
-                <Header />
-                <ContentArea>
-                  <CalendarContainer>
-                    <Calendar />
-                  </CalendarContainer>
-                  <MeetingDetailsContainer>
-                    <MeetingDetails />
-                  </MeetingDetailsContainer>
-                </ContentArea>
-              </MainContent>
-            </AppContainer>
-          </ThemeProvider>
-        </Provider>
-      </Routes>
-    </Router>
+    <Provider store={store}>
+      <ThemeProvider theme={darkTheme}>
+        <CssBaseline />
+        <Router>
+          <Routes>
+            <Route path="/" element={
+              <AppContainer>
+                <Sidebar />
+                <MainContent>
+                  <Header />
+                  <ContentArea>
+                    <CalendarContainer>
+                      <Calendar />
+                    </CalendarContainer>
+                    <MeetingDetailsContainer>
+                      <MeetingDetails />
+                    </MeetingDetailsContainer>
+                  </ContentArea>
+                </MainContent>
+              </AppContainer>
+            } />
+          </Routes>
+        </Router>
+      </ThemeProvider>
+    </Provider>
   );
 }
 
