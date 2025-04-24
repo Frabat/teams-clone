@@ -1,13 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
-import ptoReducer from './ptoSlice';
-import dateReducer from './dateSlice';
+import rootReducer from './rootReducer'; // Use the combined root reducer
 
 export const store = configureStore({
-  reducer: {
-    pto: ptoReducer,
-    date: dateReducer,
-  },
+  reducer: rootReducer, // Use rootReducer
 });
 
+// Infer the `RootState` and `AppDispatch` types from the store itself
 export type RootState = ReturnType<typeof store.getState>;
-export type AppDispatch = typeof store.dispatch; 
+// Inferred type: {posts: PostsState, comments: CommentsState, users: UsersState}
+export type AppDispatch = typeof store.dispatch;
