@@ -5,6 +5,8 @@ export interface PTO {
   id: string;
   userId: string;
   userName: string;
+  title: string;
+  description: string;
   startDate: string;
   endDate: string;
   startTime: string;
@@ -24,6 +26,8 @@ const initialState: PTOState = {
       id: '1',
       userId: '1',
       userName: 'Francesco Battista',
+      title: 'Vacation',
+      description: 'Annual vacation',
       startDate: '2025-04-21',
       endDate: '2025-04-21',
       startTime: '09:00',
@@ -35,6 +39,8 @@ const initialState: PTOState = {
       id: '2',
       userId: '1',
       userName: 'Francesco Battista',
+      title: 'Vacation',
+      description: 'Annual vacation',
       startDate: '2025-04-22',
       endDate: '2025-04-22',
       startTime: '09:00',
@@ -47,6 +53,8 @@ const initialState: PTOState = {
       id: '3',
       userId: '2',
       userName: 'Rahul Das',
+      title: 'Personal Day',
+      description: 'Doctor appointment',
       startDate: '2025-04-24',
       endDate: '2025-04-24',
       startTime: '09:00',
@@ -58,6 +66,8 @@ const initialState: PTOState = {
       id: '4',
       userId: '2',
       userName: 'Rahul Das',
+      title: 'Personal Day',
+      description: 'Doctor appointment',
       startDate: '2025-04-25',
       endDate: '2025-04-25',
       startTime: '14:00',
@@ -70,6 +80,8 @@ const initialState: PTOState = {
       id: '5',
       userId: '3',
       userName: 'Jeff Underwood',
+      title: 'Vacation',
+      description: 'Annual vacation',
       startDate: '2025-04-29',
       endDate: '2025-04-29',
       startTime: '09:00',
@@ -81,6 +93,8 @@ const initialState: PTOState = {
       id: '6',
       userId: '3',
       userName: 'Jeff Underwood',
+      title: 'Vacation',
+      description: 'Annual vacation',
       startDate: '2025-04-30',
       endDate: '2025-04-30',
       startTime: '09:00',
@@ -93,6 +107,8 @@ const initialState: PTOState = {
       id: '7',
       userId: '4',
       userName: 'Shengxiang Zhao',
+      title: 'Personal Day',
+      description: 'Doctor appointment',
       startDate: '2025-05-02',
       endDate: '2025-05-02',
       startTime: '09:00',
@@ -104,6 +120,8 @@ const initialState: PTOState = {
       id: '8',
       userId: '4',
       userName: 'Shengxiang Zhao',
+      title: 'Personal Day',
+      description: 'Doctor appointment',
       startDate: '2025-05-03',
       endDate: '2025-05-03',
       startTime: '09:00',
@@ -116,6 +134,8 @@ const initialState: PTOState = {
       id: '9',
       userId: '5',
       userName: 'Dillon Hall-Rodriguez',
+      title: 'Vacation',
+      description: 'Annual vacation',
       startDate: '2025-05-06',
       endDate: '2025-05-06',
       startTime: '09:00',
@@ -127,6 +147,8 @@ const initialState: PTOState = {
       id: '10',
       userId: '5',
       userName: 'Dillon Hall-Rodriguez',
+      title: 'Vacation',
+      description: 'Annual vacation',
       startDate: '2025-05-07',
       endDate: '2025-05-07',
       startTime: '09:00',
